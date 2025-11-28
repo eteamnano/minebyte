@@ -1,0 +1,84 @@
+/* ---------------- NAV ---------------- */
+.navbar {
+    background: #e5e5e5 !important; /* gris claro */
+}
+
+.navbar-brand img {
+    width: 40px;
+    margin-right: 8px;
+}
+
+/* ---------------- SECCIONES ---------------- */
+
+.section-box {
+    border: 1px solid #d0d0d0;
+    padding: 40px 25px 25px 25px;  /* deja espacio arriba para el texto */
+    margin-bottom: 60px;
+    position: relative;
+    background: white;
+}
+
+/* Título general */
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    background: #152f3c;    /* color dorado */
+    color: white;
+    padding: 10px 25px;
+    width: fit-content;
+    position: absolute;
+    top: -25px;             /* lo baja sin pegarlo al recuadro */
+    left: 0;
+}
+
+/* Título alineado a la derecha */
+.section-title.right {
+    right: 0;
+    left: auto;
+}
+
+/* ---------------- CARDS DE EQUIPO ---------------- */
+
+.team-card {
+    border: 1px solid #cfcfcf;
+}
+
+.team-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;   /* evita deformación */
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+    background: #152f3c;  /* dorado */
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-content img {
+    width: 50px;
+}
+
+.footer-content p {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 768px) {
+    .section-title.right {
+        right: auto;
+        left: 0;
+    }
+}
