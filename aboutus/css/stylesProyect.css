@@ -1,0 +1,96 @@
+/* =========================================
+   ESTILOS DEL APARTADO DEL PROYECTO (AMARILLOS)
+   MISMO DISEÑO QUE "SOBRE EL EQUIPO"
+========================================= */
+
+/* Contenedor de secciones */
+.section-box {
+    background: #fefefe;        /* Amarillo muy suave */
+    border: 3px solid #e4c000;  /* Amarillo intenso */
+    padding: 30px;
+    margin: 70px 0;
+    position: relative;
+    border-radius: 0;           /* SIN esquinas redondeadas */
+}
+
+/* Título en recuadro */
+.section-title {
+    background: #ffe680;        /* Amarillo brillante */
+    color: #000;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 3px solid #e4c000;
+    position: absolute;
+    top: -25px;
+    left: 25px;
+    display: inline-block;
+    border-radius: 0;
+    font-size: 22px;
+}
+
+/* Título intercalado a la derecha */
+.section-title.right,
+.section-title.alt {
+    left: auto;
+    right: 25px;
+}
+
+/* Mejor espaciado entre título y texto */
+.section-box p,
+.section-box ul {
+    margin-top: 25px !important;
+}
+
+/* LISTAS */
+.section-box ul li {
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+/* =========================================
+   IMÁGENES (centradas y con buen tamaño)
+========================================= */
+.section-box img,
+img.img-fluid {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+/* =========================================
+   TARJETAS DE LOGO Y DESCRIPCIÓN (inicio del proyecto)
+========================================= */
+.card {
+    border: 3px solid #e4c000;
+    background: #fefefe;
+    border-radius: 0;
+}
+
+.card h4 {
+    font-weight: bold;
+    color: #5a4c00;
+}
+
+/* Para logos o imágenes cuadradas */
+.logo-card img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+}
+
+/* =========================================
+   FOOTER DEL APARTADO DEL PROYECTO
+========================================= */
+footer {
+    background: #003c8f;  /* Azul */
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+}
+
+footer img {
+    width: 90px;
+    margin-bottom: 10px;
+}
