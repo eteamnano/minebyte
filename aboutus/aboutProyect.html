@@ -2,9 +2,9 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Sobre el Proyecto - MineByte</title>
+    <title>MineByte</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stylesProyect.css">
 </head>
 
 <body>
@@ -12,8 +12,9 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="aboutUs.html">
-            <img src="logo.png"> MineByte
+        <a class="navbar-brand" href="../index.html">
+            <img src="imgs/NanoTech.png" alt="Logo" style="width:50px;">
+            MineByte
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
@@ -22,59 +23,94 @@
 
         <div id="nav" class="collapse navbar-collapse">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="aboutUs.html">Sobre Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html">Sobre Nosotros</a></li>
                 <li class="nav-item"><a class="nav-link active" href="aboutProyect.html">Sobre el Proyecto</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
+<!-- CONTENIDO PRINCIPAL -->
 <div class="container mt-5">
 
     <!-- LOGO + DESCRIPCIÓN -->
     <div class="row g-4">
         <div class="col-md-6">
-            <div class="card p-3">
-                <img src="logo.png" class="img-fluid">
+            <div class="card p-3 logo-card">
+                <img src="imgs/MineByte Logotipo 300px.png" class="img-fluid" alt="Logo Proyecto">
             </div>
         </div>
+
         <div class="col-md-6">
             <div class="card p-3">
                 <h4>Descripción General</h4>
                 <p>
-                    MineByte es un sistema domótico minero enfocado en el monitoreo de condiciones internas,
-                    alertamiento y seguridad operativa mediante IoT y software especializado.
+                    Sistema domótico de monitoreo minero. MineByte es un producto comprometido con la seguridad de los trabajadores en las minas, por lo cual ofrece la implementación de software y hardware para monitorear las condiciones internas de una mina y advertir sobre posibles condiciones adversas que comprometan la seguridad humana.
                 </p>
             </div>
         </div>
+    </div>
+
+    <!-- PROBLEMÁTICA -->
+    <div class="section-box">
+        <div class="section-title">Problemática</div>
+        <p>
+            La mina de carbón 'El Pinabete' en Sabinas, Coahuila, enfrenta una 
+problemática extremadamente crítica y centrada en tres riesgos mortales: 
+las inundaciones, el gas metano y los derrumbes. Su tragedia más grave 
+ocurrió en agosto de 2022, cuando la perforación hacia una mina 
+abandonada aledaña llena de agua provocó una inundación catastrófica 
+que ahogó a diez mineros. Este evento activó una cadena de peligros: el 
+agua liberada saturó el terreno, debilitando las estructuras de los túneles y 
+causando derrumbes que obstruyeron las vías de acceso y rescate. 
+Simultáneamente, la inundación desplazó y acumuló gas metano en bolsas 
+subterráneas que, al bajar el nivel del agua durante las labores de bombeo, 
+se liberaron creando una atmósfera altamente explosiva. Esto obligó a 
+pausar repetidamente las operaciones por el riesgo de una nueva tragedia. 
+Así, la mina se convirtió en un escenario donde inundación, gas y derrumbes 
+se potencian mutuamente, reflejando no solo un accidente puntual, sino 
+fallas estructurales de seguridad en la minería de la región. 
+        </p>
+    </div>
+
+    <!-- OBJETIVO -->
+    <div class="section-box">
+        <div class="section-title right">Objetivo</div>
+        <p>
+            Mitigar incidentes que comprometan la integridad del personal en el interior de la mina, mediante un sistema que fortalezca la seguridad operativa, con el propósito de garantizar condiciones laborales seguras.
+        </p>
     </div>
 
     <!-- RF -->
     <div class="section-box">
         <div class="section-title">Requerimientos Funcionales</div>
         <ul>
-            <li>Monitoreo en tiempo real</li>
-            <li>Alertas visuales y auditivas</li>
+            <li>Monitoreo ambiental en tiempo real</li>
+            <li>Alertas visuales, auditivas y en interfaz</li>
+            <li>Panel administrativo con autenticación</li>
+            <li>Control remoto de maquinaria IoT</li>
+            <li>Acciones preventivas y correctivas</li>
+            <li>Generación de estadísticas</li>
             <li>Autenticación de usuarios</li>
-            <li>Control de maquinaria</li>
         </ul>
     </div>
 
     <!-- RNF -->
     <div class="section-box">
-        <div class="section-title alt">Requerimientos No Funcionales</div>
+        <div class="section-title right">Requerimientos No Funcionales</div>
         <ul>
-            <li>Disponibilidad 24/7</li>
+            <li>Disponibilidad 24/7 del sistema</li>
+            <li>Interfaz responsiva e intuitiva</li>
+            <li>Seguridad y cifrado de datos</li>
             <li>Interfaz intuitiva</li>
-            <li>Seguridad de datos</li>
-            <li>Escalabilidad del sistema</li>
+
         </ul>
     </div>
 
     <!-- PREVIEW APP -->
     <div class="section-box">
-        <div class="section-title alt">Preview de la Aplicación</div>
-        <img src="preview.jpg" class="img-fluid">
+        <div class="section-title">Preview de la Aplicación</div>
+        <img src="../imgs/previewApp.jpg" class="img-fluid" alt="Preview">
     </div>
 
     <!-- GARRA + INTERFAZ -->
@@ -83,16 +119,16 @@
         <div class="col-md-6">
             <div class="section-box">
                 <div class="section-title">Funcionamiento de la Garra</div>
-                <img src="garra.jpg" class="img-fluid mb-2">
-                <p>Representación del mecanismo de la garra controlado mediante IoT.</p>
+                <img src="../imgs/garra.jpg" class="img-fluid mb-2" alt="Garra">
+                <p>Representación del mecanismo de garra operada remotamente oupando el protocolo HTTP.</p>
             </div>
         </div>
 
         <div class="col-md-6">
             <div class="section-box">
-                <div class="section-title alt">Interfaz de Control</div>
-                <img src="interfaz-garra.jpg" class="img-fluid mb-2">
-                <p>Interfaz gráfica para controlar la garra remotamente.</p>
+                <div class="section-title right">Interfaz de Control</div>
+                <img src="../imgs/interfaz-garra.jpg" class="img-fluid mb-2" alt="Interfaz Garra">
+                <p>Panel de operación remoto para la manipulación de la garra en tiempo real.</p>
             </div>
         </div>
 
@@ -101,7 +137,7 @@
     <!-- MAQUETA -->
     <div class="section-box mt-4">
         <div class="section-title">Maqueta</div>
-        <img src="maqueta.jpg" class="img-fluid">
+        <img src="../imgs/maqueta.jpg" class="img-fluid" alt="Maqueta">
     </div>
 
 </div>
@@ -109,12 +145,12 @@
 <!-- FOOTER -->
 <footer>
     <div class="container footer-content">
-        <img src="logo.png" alt="Logo">
-        <p>© MineByte - 2025</p>
+        <img src="../imgs/NanoTech.png" alt="Logo" />
+        <p>© NanoTech - 2025</p>
     </div>
 </footer>
 
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
